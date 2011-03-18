@@ -29,7 +29,8 @@ puts "************************************************"
 puts "*** Deploying to #{domain} (#{application}/#{rails_env}) " 
 puts "************************************************"
 
-#
+after "deploy:restart", "restart_twitterstream"
+
 desc "Restart TwitterStreamWorker"
 task :restart_twitterstream do
   run "ruby #{current_path}/script/twitterstream.rb stop #{rails_env}"

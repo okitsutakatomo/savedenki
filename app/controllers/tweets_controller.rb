@@ -1,4 +1,4 @@
-class TweetsController < ApplicationController
+#class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.xml
   def index

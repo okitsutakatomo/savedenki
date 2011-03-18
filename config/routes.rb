@@ -36,7 +36,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
   
   map.root :controller => "index", :action => "index"
-  map.resources :tweets
+  #map.resources :tweets
 
   #map.mauth "/users/:access_secret", :controller => "loves", :action => "new"
   # See how all your routes lay out with "rake routes"
