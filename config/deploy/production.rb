@@ -29,13 +29,15 @@ puts "************************************************"
 puts "*** Deploying to #{domain} (#{application}/#{rails_env}) " 
 puts "************************************************"
 
-after "deploy:start", "restart_twitterstream"
-after "deploy:restart", "restart_twitterstream"
+#after "deploy:start", "restart_twitterstream"
+#after "deploy:restart", "restart_twitterstream"
 
+#現在スタートが動かないため、手動で実行する。
+#ruby /home/okitsu/www/savedenki/current/script/twitterstream.rb start production
 desc "Restart TwitterStreamWorker"
-task :restart_twitterstream do
-  run "ruby #{current_path}/script/twitterstream.rb stop #{rails_env}"
-  run "ruby #{current_path}/script/twitterstream.rb start #{rails_env}"
+task :restart_twitterstream, :roles => :app do
+  send(:run, "ruby #{current_path}/script/twitterstream.rb stop #{rails_env}")
+  send(:run, "ruby #{current_path}/script/twitterstream.rb start #{rails_env}")
 end
 
 #バックアップする
