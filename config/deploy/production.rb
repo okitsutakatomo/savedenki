@@ -29,6 +29,7 @@ puts "************************************************"
 puts "*** Deploying to #{domain} (#{application}/#{rails_env}) " 
 puts "************************************************"
 
+after "deploy:start", "restart_twitterstream"
 after "deploy:restart", "restart_twitterstream"
 
 desc "Restart TwitterStreamWorker"
