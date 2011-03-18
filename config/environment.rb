@@ -46,7 +46,7 @@ Rails::Initializer.run do |config|
 end
 
 
-require 'lib/jpmobile/mobile/sp.rb'
-carriers = Jpmobile::Mobile.carriers
-Jpmobile::Mobile.carriers = carriers.push("Sp")
+#require 'lib/jpmobile/mobile/sp.rb'
+#carriers = Jpmobile::Mobile.carriers
+#Jpmobile::Mobile.carriers = carriers.push("Sp")
 
