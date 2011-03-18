@@ -1,0 +1,48 @@
+<div id="about">
+  <h2 style="color: #016998;">■みみうちとは？</h2>
+  <p>みみうちとは、相手に告白することなく、両思い&#xE6ED;かどうか確認できるTwitter連携サービスです。自分の片思いが相手に知られることはありません。あなたの片思いをそっと「みみうち」するだけです。</p>
+  <span>&#xE683;</span><%= link_to "みみうちとは", "/about" %><br/>
+  <span>&#xE683;</span><%= link_to "ヘルプ", "/help" %><br/>
+</div>
+
+<div id="howto">
+  <h2 style="color: #016998;">■TwitterIDでログイン</h2>
+  <div>
+    ツイッターのログイン情報を入力してください｡<br>
+    <%- form_tag session_path do -%>
+      <table>
+        <tbody><tr>
+            <td><span style="font-size: x-small;">ログインID</span></td>
+            <td>
+              <%= text_field_tag("username", "", :size=>"16", :style=>"width: 150px;", :mode=>"alphabet", :format=>"*x", :istyle=>"3") %>
+            </td>
+          </tr>
+          <tr>
+            <td><span style="font-size: x-small;">パスワード</span></td>
+            <td>
+              <%= text_field_tag("password", "", :size=>"16", :style=>"width: 150px;", :mode=>"alphabet", :format=>"*x", :istyle=>"3") %>
+            </tr>
+          </tbody>
+        </table>
+        <p style="color: #FF5272;">※ログインと同時にみみうち(@33uchi)をフォローします。</p>
+        <%= check_box_tag "remember_me", "1", true %>
+        <label for="remember_me" >次回から自動的にログイン(Cookie対応機種のみ)</label>
+        <div style="text-align: center;">
+          <%= submit_tag('ログイン', :id => "login_submit") %>
+        </div>
+        入力されたパスワードは初回のTwitter認証にのみ利用します。<br>認証完了後はみみうちにパスワードを保存しません。
+      <%- end -%>
+
+    </div>
+  </div>
+
+  <div id="twitter_intro">
+    <h2 style="color: #016998;">■みみうちをフォロー</h2>
+    <span>&#xE6FB;</span><a href="http://twitter.com/33uchi">みみうちをフォローする</a>
+    <p>フォローしておくと誰かに片思いされたときに通知が来たり、みみうちな情報が届きます。</p>
+    </p>
+  </div> 
+</div>
+
+
+

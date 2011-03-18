@@ -1,0 +1,319 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+# Japanese translations for Ruby on Rails 
+# by Akira Matsuda (ronnie@dio.jp)
+# AR error messages are basically taken from Ruby-GetText-Package. Thanks to Masao Mutoh.
+
+ja:
+  date:
+    formats:
+      default: "%Y/%m/%d"
+      short: "%m/%d"
+      long: "%Y年%m月%d日(%a)"
+
+    day_names: [日曜日, 月曜日, 火曜日, 水曜日, 木曜日, 金曜日, 土曜日]
+    abbr_day_names: [日, 月, 火, 水, 木, 金, 土]
+
+    month_names: [~, 1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月]
+    abbr_month_names: [~, 1月, 2月, 3月, 4月, 5月, 6月, 7月, 8月, 9月, 10月, 11月, 12月]
+
+    order: [:year, :month, :day]
+
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      short: "%y/%m/%d %H:%M"
+      long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
+    am: "午前"
+    pm: "午後"
+
+  support:
+    array:
+      sentence_connector: "と"
+      skip_last_comma: true
+      words_connector: "と"
+      two_words_connector: "と"
+      last_word_connector: "と"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+
+    currency:
+      format:
+        format: "%n%u"
+        unit: "円"
+        separator: "."
+        delimiter: ","
+        precision: 0
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+      storage_units:
+        format: "%n%u"
+        units:
+          byte: "バイト"
+          kb: "キロバイト"
+          mb: "メガバイト"
+          gb: "ギガバイト"
+          tb: "テラバイト"
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "30秒前後"
+      less_than_x_seconds:
+        one:   "1秒以内"
+        other: "{{count}}秒以内"
+      x_seconds:
+        one:   "1秒"
+        other: "{{count}}秒"
+      less_than_x_minutes:
+        one:   "1分以内"
+        other: "{{count}}分以内"
+      x_minutes:
+        one:   "1分"
+        other: "{{count}}分"
+      about_x_hours:
+        one:   "約1時間"
+        other: "約{{count}}時間"
+      x_days:
+        one:   "1日"
+        other: "{{count}}日"
+      about_x_months:
+        one:   "約1ヶ月"
+        other: "約{{count}}ヶ月"
+      x_months:
+        one:   "1ヶ月"
+        other: "{{count}}ヶ月"
+      about_x_years:
+        one:   "約{{count}}年"
+        other: "約{{count}}年"
+      over_x_years:
+        one:   "{{count}}年以上"
+        other: "{{count}}年以上"
+
+  activerecord:
+    errors:
+      format:
+        separator: ""
+      template:
+        header:
+          one:   "{{model}}にエラーが発生しました。"
+          other: "{{model}}に{{count}}つのエラーが発生しました。"
+        body: "次の項目を確認してください。"
+
+      messages:
+        inclusion: "は一覧にありません。"
+        exclusion: "は予約されています。"
+        invalid: "は不正な値です。"
+        confirmation: "が一致しません。"
+        accepted: "を受諾してください。"
+        empty: "を入力してください。"
+        blank: "を入力してください。"
+        too_long: "は{{count}}文字以内で入力してください。"
+        too_short: "は{{count}}文字以上で入力してください。"
+        wrong_length: "は{{count}}文字で入力してください。"
+        taken: "はすでに存在します。"
+        not_a_number: "は数値で入力してください。"
+        greater_than: "は{{count}}より大きい値にしてください。"
+        greater_than_or_equal_to: "は{{count}}以上の値にしてください。"
+        equal_to: "は{{count}}にしてください。"
+        less_than: "は{{count}}より小さい値にしてください。"
+        less_than_or_equal_to: "は{{count}}以下の値にしてください。"
+        odd: "は奇数にしてください。"
+        even: "は偶数にしてください。"
+
+  about:
+    delivery:
+      title: "DMの遅配についてのお知らせ"
+      p1: "ただいま「みみうち」では、非常に沢山の方にご登録いただいているため、Twitterのシステム利用上限にかかりDM(両思い・片想い)の配信が遅延しています。"
+      p2: "通知を遅れなく確認するためには、みみうち上の「{{link_home}}」画面でご確認いただくか、「{{link_account}}」画面より通知の方法を変更していただく必要があります。"
+      account_link_title: "ダイレクトメッセージ配信の設定"
+      home_link_title: "あなたへのお知らせ"
+    index:
+      section1:
+        title: "みみうちとは"
+        p1: "みみうちとは、相手に告白することなく、両思いかどうか確認できるTwitter連携サービスです。"
+        p2: "両思いにならない限り、自分の片思いが相手に知られることはありません。あなたの片思いをそっと「みみうち」するだけです。"
+      section2:
+        title: "使い方"
+        for_newuser:
+          title: "＜初めて利用される方＞"
+          li1: "「Twitter IDでログイン」をクリックします。"
+          li2: "TwitterのID連携ページに遷移するので、Twitterにログインしてください。"
+          li3: "あなたの気になる人のTwitter IDを入力してください。既に気になる人をTwitterでフォローしている場合は、［フォローから選ぶ］から選択することも可能です。"
+          li4: "［この内容で登録する］をクリックします。以上で登録完了です。"
+        for_alreadyuser:
+          title: "＜気になる人を登録済みの方＞"
+          li1: "気になる人を変更 → 気になる人のTwitter IDを入れて、[この内容に変更する]をクリックします。"
+          li2: "気になる人を削除 → [登録内容を削除する]をクリックします。"
+          li3: "両思いかどうか確認 → 両思いが成立した場合、ログインした状態のトップ画面でお知らせします。"
+  account:
+    done:
+      top_link_title: "トップヘ戻る"
+    index:
+      title: "ダイレクトメッセージ配信の設定"
+      p1: "DMで受け取る通知を他の方法に変更できます。"
+      dm_title: "DM"
+      dm_notice: "※Twitterの制限により遅延する場合があります。"
+      mail_title: "メール(推奨)"
+      mail_placeholder: "メールアドレスを入力"
+      mail_notice: "※ドメイン指定受信されている場合、mimiuchi.com を許可してください。"
+      self_title: "セルフ式DM"
+      self_notice: "※自分のIDからDMが届きます(相手には@33uchiか相手のIDからお届けします)"
+      locale_title: "言語設定"
+      locale_ja_label: "日本語"
+      locale_en_label: "English"
+      
+  commons:
+    more:
+      more_text: "もっと見る"
+    user:
+    users:
+      q_placeholder: "名前からユーザを探す"
+      more_text: "もっと見る"
+  help:
+    index:
+      section1:
+        title: "よくあるご質問(FAQ)"
+        q1: "Q1：複数の人を気になる人に登録したいのですが、可能でしょうか？"
+        a1: "A1：気になる人は一人しか登録できません。"
+        q2: "Q2：気になる人を変更することは可能でしょうか？"
+        a2: "A2：可能です。現在の気になる人を削除し、新たに気になる人を登録してください。ただし、前回登録してから24時間は変更出来ません。"
+        q3: "Q3：ダイレクトメッセージ*通知メールを誤って削除してしまいました。どうすればいいでしょうか？"
+        a3: "A3：みみうちWebサイトの上部にある「あなたへのお知らせ」で過去の通知一覧が確認できます。"
+        q4: "Q4：両思いになったはずなのに、ダイレクトメッセージが届きません。"
+        a4: 'A4：Twitterの一日に配信可能なダイレクトメッセージ数を超えたことにより、配信が遅延している可能性があります。（みみうちWebサイトの上部にある「{{link_home}}」でダイレクトメッセージと同じ内容が確認できます。）また、みみうちのTwitterアカウント（@<a href="http://twitter.com/33uchi">33uchi</a>）をフォローしていないとダイレクトメッセージは配信されません。なお、通知方法の設定は「{{link_account}}」で変更できます。'
+      section2:
+        title: "サービスに関するお問い合わせ"
+        p1: "下記メールアドレスまでお問い合わせください。"
+        p2: 'E-Mail：<a href="mailto:info@mimiuchi.com">info@mimiuchi.com</a>'
+      home_link_title: "あなたへのお知らせ"
+      setting_link_title: "設定"
+    
+  home:
+    index:
+      title: "みみうちから、あなたへのお知らせ"
+      messages_not_found: "あなたへのお知らせはありません。"
+      bookmark_notice: "※誰かがあなたを登録した場合、このページでお知らせします。そのため、このページをブックマークしておくことをお勧めします。"
+      ago: "前"
+  layouts:
+    application:
+      header_title: "みみうち | 相手に告白することなく、両思いかどうか確認できるサービス"
+      description: "みみうちとは、相手に告白することなく、両思いかどうかTwitter IDで確認できるサービスです。"
+      start_title: "ホーム"
+      keywords: "twitter,ツイッター,両思い,恋愛,告白"
+      logo_link_text: "みみうち"
+      login_information: "でログイン中"
+      couple_notification: "あなたと両思いの人がいます！"
+      oneway_notification: "誰かがあなたをみみうちしました！"
+      home_link_title: "あなたへのお知らせ"
+      delivery_link_title: "DMの遅配についてのお知らせ"
+      logout_link_text: "ログアウト "
+      account_link_text: "設定"
+      help_link_text: "ヘルプ"
+      about_link_text: "みみうちとは"
+      copyright: "&copy; みみうち"
+      english_announce: "英語版を公開しました！<br />We are pleased to announce that we've launched the English version!"
+  locales:
+  loves:
+    destroy:
+      title: "削除しました"
+      p1: "削除しました。"
+      top_link_text: "トップヘ戻る"
+    new:
+      p1: "気になる人のTwitter IDを登録してください"
+      title2: "登録"
+      placeholder: "TwitterIDを入力"
+      select_following_link_text: "<strong>フォローから選ぶ</strong>"
+      opt_in: "気になる人を登録したことをTwitterにつぶやく。（誰を登録したかは分かりません）"
+    update:
+      title: "あなたが登録した人"
+      p1: "気になる人が登録されています。あなたが登録した相手も、あなたを気になる人に登録した場合（両思いの場合）だけ、2人にダイレクトメッセージが送られます。"
+      p2: "みみうち(@33uchi)のフォローを外すと、両思いのときにダイレクトメッセージが届きませんのでご注意ください。(通知方法に@33uchiからのダイレクトメッセージを選択している場合)"
+      p3: "※サービスが混み合っている場合、ダイレクトメッセージの配信が遅延する場合があります。通知を遅れなく確認するためには、「{{link_account}}」より通知の方法を変更してください。"
+      title2: "変更・削除"
+      destroy_link_text: "本当に削除してもいい？"
+
+  mail:
+    activation_email:
+      p1: "こんにちは {{screen_name}} さん"
+      p2: "以下のアドレスをクリックすることにより、あなたのメールの登録確認が完了します："
+      p3: "上記の確認作業が完了しないと、みみうちからのお知らせを本メールアドレスで受け取る事ができませんのでご注意ください。"
+      p4: "みみうち"
+    direct_message:
+      p1: "こんにちは {{screen_name}} さん"
+      p2: "▼みみうちからのダイレクトメッセージはこちらからも確認できます。"
+      p3: "▼ダイレクトメッセージ通知設定の変更はこちら。"
+      p4: "みみうち"
+  sessions:
+    new:
+      overview_text: "気になる人のTwitter IDを登録して下さい。あなたが登録した相手も、あなたを気になる人に登録した場合（両思いの場合）だけ、2人に通知が送られます。あなたが「誰か」に登録された場合も、通知が送られます。"
+      caution: "※ログインと同時にみみうち(@33uchi)をフォローします。"
+      follow_link_text: "みみうちをフォロー"
+      follow_text: "フォローしておくと誰かに片思いされたときに通知が来たり、みみうちな情報が届きます。"
+  users:
+
+  controller:
+    account:
+      setting_done: "設定を変更しました。"
+      confirm_email_message: "確認用のメールを送信しました。"
+      failed_to_sent_email: "メール送信に失敗しました。メールアドレスが不正な可能性があります。"
+      email_activation_done: "{{email}} の確認ができました。今後はこのメールアドレスにみみうちからの通知が送信されます。"
+      invalid_url: "無効なURLです。"
+      duplicate_email: "既に登録されているメールアドレスの可能性があります。"
+      unexpected_error: "予期せぬエラーです。"
+    home:
+      title: "フォローしている人"
+    loves:
+      user_suspended: "登録している人のTwitterアカウントが停止しています。再度登録しなおしてください。"
+      login_again: "もう一度TwitterIDでログインし直してください。"
+      user_deleted: "登録している人のTwitterアカウントが削除されています。再度登録しなおしてください。"
+      unable_to_update: "まだ新しいみみうちはできません。約{{time}}にまたみみうちすることができます。"
+      user_not_found: "{{user}}さんが見つからないよ！"
+      retry: "もう一度やり直してください！"
+      register_done: "登録されました！"
+      after_hours: "時間後"
+      after_minutes: "分後"
+    sessions:
+      wrong_id_and_password_combination: "ログインIDもしくはパスワードが間違っています。"
+      failed_to_oauth: "ログインIDもしくはパスワードが間違っています。"
+    users:
+      title: "「{{keyword}}」の検索結果"
+
+  model:
+    love:
+      yourself: "それはあなたです！"
+    mail:
+      subject_for_dm: "みみうちからあなたへのダイレクトメッセージです。"
+      from: "みみうち"
+      subject_for_activation: "[みみうち] メールアドレスの確認"
+    unactivated_email:
+      duplicate_email: "そのメールアドレスは既に利用されています。"
+
+
+  mimiuchi_message:
+    tweet: "@{{screen_name}} さんが気になる人を「みみうち」に登録しました。相手も@{{screen_name}} さんを気になる人に登録した場合だけ(両思い)2人にダイレクトメッセージが送られます。みみうち：http://mimiuchi.com  #mimiuchi"
+    oneway: "誰かが「みみうち」で@{{lover_screen_name}}さんを気になる人に登録しました。@{{lover_screen_name}}さんも気になる人を登録し、両思いだったときだけ、誰が相手かがわかります。http://mimiuchi.com"
+    couple: "おめでとうございます！あなたと@{{lover_screen_name}}さんは両思いでした。ハッシュタグ #33love を使って喜びの言葉をつぶやいて、両思いの寄せ書きにご協力ください！ http://mimiuchi.com"
+
+  images:
+    edit_button_url: "/images/edit_button.png"
+    delete_button_url: "/images/delete_button.png"
+    submit_button_url: "/images/submit_button.png"
+    login_button_url: "/images/login_button.png"
+
+

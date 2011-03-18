@@ -1,0 +1,40 @@
+<div id="container">
+  <ul id="tab">
+
+  </ul>
+  <ul id="list">
+    <% @num = 0 %>
+    <% for tweet in @tweets %>
+      <% @num += 1 %>
+      <li>
+      <div class="list_box">
+        <span class="number"><%= @num %></span>
+        <p class="text">
+        <%= auto_link(encode_message(tweet.text), :target => "_blank") %>
+        </p>
+        <span class="retweet_count">
+          <a href="http://twitter.com/home?status=RT @<%= h tweet.user_screen_name %>: <%= url_encode tweet.text %>" target="_blank">
+            <strong><%= h tweet.local_retweet_count %></strong><br/>Retweets
+          </a>
+        </span>
+        <div class="details">
+          <div class="tweet_detail">
+            <span class="timestamp">
+              <a target="_blank" href="http://twitter.com/<%= h tweet.user_screen_name %>/status/<%= h tweet.original_id %>"><%= time_ago_in_words tweet.created_at %>前</a>
+            </span>
+          </div>
+          <div class="tweet_user">
+            <a href="http://twitter.com/<%= h tweet.user_screen_name %>" class="profile_image">
+              <img src="<%= tweet.user_profile_image_url %>"/>
+            </a>
+            <div class="user_name_block">
+              <a href="http://twitter.com/<%= h tweet.user_screen_name %>">@<%= h tweet.user_screen_name %></a>
+              <span><%= h tweet.user_name %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

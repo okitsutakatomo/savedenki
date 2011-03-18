@@ -1,0 +1,188 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+# US English translations for Ruby on Rails
+#
+# Use this as the base for the locale file of your language.
+
+en:
+  about:
+    delivery:
+      title: "DMの遅配についてのお知らせ"
+      p1: "ただいま「みみうち」では、非常に沢山の方にご登録いただいているため、Twitterのシステム利用上限にかかりDM(両思い・片想い)の配信が遅延しています。"
+      p2: "通知を遅れなく確認するためには、みみうち上の「{{link_home}}」画面でご確認いただくか、「{{link_account}}」画面より通知の方法を変更していただく必要があります。"
+      account_link_title: "your setting page"
+      home_link_title: "your notice page"
+    index:
+      section1:
+        title: "What’s Mimiuchi?"
+        p1: "Mimiuchi is a Twitter-based application that enables you to confirm mutual love without having to explicitly reveal said love unless it's mutual."
+        p2: "As long as it is not clear that the love is mutual, your love target will never know you love him/her. It’s easy. All you have to do is whispering in our ear that you love him/her! We'll keep it a secret until we find out it's mutual."
+      section2:
+        title: "How to use"
+        for_newuser:
+          title: "== For first time users =="
+          li1: "Click the “log-in with Twitter ID” button."
+          li2: "You will be redirected to the Twitter authentication page. Please log-in to Twitter and authorize a connection between Twitter and Mimiuchi."
+          li3: "Enter the Twitter ID of a person you love."
+          li4: "Click the “Register” button."
+        for_alreadyuser:
+          title: "== For users who have already registered someone =="
+          li1: "Edit : Click the &quot;Edit my love choice&quot; button."
+          li2: "Delete : Click the &quot;Delete my choice&quot; button."
+          li3: "Check if you are matched : We will notice you in our top page in which case you are matched."
+  account:
+    done:
+      top_link_title: "Back To Top"
+    index:
+      title: "Notification Setting"
+      p1: "Please set the way of notification you receive when you are registered by someone and you are matched."
+      dm_title: "DM(from Mimiuchi)"
+      dm_notice: "Note: this is sometimes delayed because of the limitation of the twitter system usage."
+      mail_title: "E-mail(recommended)"
+      mail_placeholder: "Enter The your E-mail"
+      mail_notice: ""
+      self_title: "DM(from yourself)"
+      self_notice: "Note:You will receive the DM from yourself. The other person will receive it from Mimiuchi."
+      locale_title: "Languages"
+      locale_ja_label: "Japanese"
+      locale_en_label: "English"
+
+  commons:
+    more:
+      more_text: "more.."
+    user:
+    users:
+      q_placeholder: "Search user.."
+      more_text: "more.."
+  help:
+    index:
+      section1:
+        title: "Help(FAQ)"
+        q1: "Q1. Can I register more than one love simultaneously?"
+        a1: "A1. No, you can’t. You can register only one person to love at a time."
+        q2: "Q2. Can I change the person I registered?"
+        a2: "A2. Yes, you can. But you are limited to at most one change per day."
+        q3: "Q3. I have deleted the notification mistakenly. What can I do?"
+        a3: "A3. You can check a list of messages for you on your notice page on our web site."
+        q4: "Q4. I think I have been matched but I have not received the direct message yet."
+        a4: 'A4. Please be sure that you are following @<a href="http://twitter.com/33uchi">33uchi</a>. Moreover, the direct message is sometime delayed because of message limitations in the twitter system usage (in which case we are experiencing a lot of registrations!). You can check a list of messages for you on {{link_home}} on our web site. You can also change your setting of the notification in {{link_account}} from direct message to e-mail that has no delay problem.'
+      section2:
+        title: "Contact us."
+        p1: "Have a question for us? Please e-mail us."
+        p2: 'E-mail : <a href="mailto:info@mimiuchi.com">info@mimiuchi.com</a>'
+      home_link_title: "your notice page"
+      setting_link_title: "your setting page"
+    
+  home:
+    index:
+      title: "Notification from Mimiuchi"
+      messages_not_found: "Your Notification is nothing.."
+      bookmark_notice: "*If someone register you as her/his love, we notice you in this page. We recommend you to bookmark it."
+      ago: "&nbsp;ago"
+  layouts:
+    application:
+      header_title: "Mimiuchi | enables you to confirm mutual love without having to explicitly reveal said love unless it's mutual."
+      description: "Mimiuchi is a Twitter-based application that enables you to confirm mutual love without having to explicitly reveal said love unless it's mutual."
+      start_title: "Home"
+      keywords: "twitter,Mimiuchi,mutual,love"
+      logo_link_text: "Mimiuchi"
+      login_information: " Logged in"
+      couple_notification: "You have been matched!"
+      oneway_notification: "Someone has registered you as her/his love!"
+      home_link_title: "Notification from Mimiuchi"
+      delivery_link_title: "DMの遅配についてのお知らせ"
+      logout_link_text: "Logout "
+      account_link_text: "Settings"
+      help_link_text: "Help"
+      about_link_text: "About Mimiuchi?"
+      copyright: "&copy; Mimiuchi"
+      english_announce: "We are pleased to announce that we've launched the English version!"
+  locales:
+  loves:
+    destroy:
+      title: "have deleted successfully."
+      p1: "have deleted successfully."
+      top_link_text: "Back to top"
+    new:
+      p1: "Enter the Twitter ID of a person you love."
+      title2: "Register"
+      placeholder: "Enter The TwitterID"
+      select_following_link_text: "<strong>People you follow.</strong>"
+      opt_in: "Tweet that you have registered someone as the person you love. (Your follower will never know who you have registered.)"
+    update:
+      title: "The person you registered."
+      p1: "You have registered a person you love. If the person also registers you as a person she/he loves (in which case you are in love with each other!) , we will send a notification to the both of you."
+      p2: "Please keep following @33uchi so that we can send the direct message as long as you use the &quot;direct massage from 33uchi&quot; notification."
+      p3: "*the direct message could sometimes be delayed because of the limitation of the twitter system usage ( in which case we are having a high volume of registration). you can change the setting of the notification from direct message to e-mail that has no delay problem in the {{link_account}}."
+      title2: "Edit/Delete"
+      destroy_link_text: "Are you delete?"
+
+  mail:
+    activation_email:
+      p1: "Hello! {{screen_name}} "
+      p2: "Please activate it by clicking the following link:"
+      p3: "Your Email has been registered, but it is not activated, yet."
+      p4: "Mimiuchi"
+    direct_message:
+      p1: "Hello! {{screen_name}}"
+      p2: "You can check a list of messages for you on your notice page on our web site."
+      p3: "You can also change your setting of the notification in your setting page."
+      p4: "Mimiuchi"
+  sessions:
+    new:
+      overview_text: "Enter the Twitter ID of a person you love. If the person also registers you as a person she/he loves (in which case you are in love with each other!), we will send a notification to the both of you. We will also send you a notification if you are registered by someone as their love. (But will keep their identity secret, of course.)"
+      caution: "*If you log-in to Mimiuchi, your account will automatically follow us (@33uchi) for direct messaging purposes."
+      follow_link_text: "Follow Mimiuchi."
+      follow_text: "We will send you a notifycation when someone registers you as a person he/she loves."
+  users:
+
+  controller:
+    account:
+      setting_done: "Your settings has been changed."
+      confirm_email_message: "A verification email has been sent to your email address. Please check your email and click the verification link."
+      failed_to_sent_email: "We failed to send the email. Please check your email address."
+      email_activation_done: "The verification has been completed successfully! E-Mail: {{email}} "
+      invalid_url: "This URL is invalid"
+      duplicate_email: "This email address have been registered."
+      unexpected_error: "An unexpected error has occurred."
+    home:
+      title: "People whom you follow"
+    loves:
+      user_suspended: "The ID you have registered is suspended by Twitter. Please try again with another ID."
+      login_again: "Please log in again with the Twitter ID."
+      user_deleted: "The ID you have registered has been deleted. Please try again with another ID."
+      unable_to_update: "You can only edit your love choice once a day. You will be able to edit again approx {{time}} hours later."
+      user_not_found: "We cannot find {{user}} !"
+      retry: "Sorry, please try again!"
+      register_done: "Have registered!"
+      after_hours: "hours ago"
+      after_minutes: "minutes ago"
+    sessions:
+      wrong_id_and_password_combination: "The login ID or password is invalid."
+      failed_to_oauth: "The login ID or password is invalid."
+    users:
+      title: "Result: {{keyword}}"
+
+  model:
+    love:
+      yourself: "It's you!"
+    mail:
+      subject_for_dm: "A direct message from Mimiuchi to you"
+      from: "Mimiuchi"
+      subject_for_activation: "[mimiuchi.com] email address confirmation"
+    unactivated_email:
+      duplicate_email: "This email address have been registered."
+
+
+  mimiuchi_message:
+    tweet: "@{{screen_name}} has registered someone as a person he/she loves. If they're in love with each other, A notification will be sent to the two. http://mimiuchi.com  #mimiuchi"
+    oneway: "Someone has registered @{{lover_screen_name}} as a person they loves. You will know who they are only when you are matched. http://mimiuchi.com"
+    couple: "Congrats! You and @{{lover_screen_name}} are in love with each other. Cheers! Pls share your story with us by tweeting it using #33love."
+
+  images:
+    edit_button_url: "/images/edit_button_en.png"
+    delete_button_url: "/images/delete_button_en.png"
+    submit_button_url: "/images/submit_button_en.png"
+    login_button_url: "/images/login_button_en.png"
+

@@ -1,0 +1,280 @@
+/*
+ * Copyright (c) 2011 savedenki project 
+ * http://savedenki.info.com
+ *
+ *Author: Takatomo okitsu
+ * Date: 2011-03-19
+ * Revision: 
+ */
+
+body {
+  font:14px/1.231 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif
+  color: #333333;
+  /*background-color: #7BB02A;*/
+}
+
+ol,ul{
+  list-style:none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.alert,
+.notice {
+  color: #FF5E7E;
+}
+
+.caution {
+  color: #FF5272;
+  margin-bottom: 10px;
+}
+
+form input[type="text"]{
+  border: #D4D4D4 1px solid;
+  font-size: 130%;
+  /* 丸角 */
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  padding: 6px;
+}
+
+section {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* header */
+header {
+  background-color: #7BB02A;  
+  overflow: hidden;
+  _zoom: 1;
+
+  margin-bottom: 15px;
+  color: #FFFFFF !important;
+  position: relative;
+}
+
+header h1 {
+  margin: 0 auto;
+  width:  865px;
+  display: block;
+  height: 158px;
+  text-indent: -9999px;
+  background: transparent url(/images/logo.png) no-repeat left center;
+}
+
+header div#header_middle {
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+header div#header_middle p { 
+  margin: 0 auto;
+  width:  865px;
+  font-size: 250%;
+  color: #7BB02A;
+  font-weight: bold;
+  padding: 7px 0; 
+}
+
+header div#header_bottom { 
+  background: transparent url(/images/description.png) no-repeat left top;
+  margin: 0 auto;
+  width:  865px;
+  height: 244px;
+  position: relative;
+  height: 300px;
+}
+
+header div#header_bottom div#tweet_widget {
+  position: absolute;
+  top: -225px;
+  right: 0;
+}
+
+header div#header_bottom div#save_denki_submit_button {
+  position: absolute;
+  top: 180px;
+  right: 25px;
+}
+
+header div#header_bottom div#widgets_area {
+  position: absolute;
+  top: 260px;
+  left: 0;
+}
+
+header div#widgets_area p { 
+  text-align: right;
+  margin: 0 auto;
+  width:  865px;
+  padding: 10px 0;
+}
+
+
+div#content {
+  position:relative;
+  margin: 0 auto;
+  width: 865px;
+  margin-bottom: 20px;
+
+  overflow: hidden;
+  _zoom: 1;
+}
+
+div#container {
+  width: 865px;
+}
+
+ul#list li {
+  border : solid #CCC 1px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+ul#list li div.list_box {
+  position: relative;
+  padding: 10px;
+  background-color: #ECF6E4;
+}
+
+span.number {
+  font-size: 367%;
+  width: 50px;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  text-shadow: rgb(192, 192, 192) 0px 0px 10px;
+}
+
+p.text {
+  font-size: 180%;
+  margin-left: 80px;
+  width: 625px;
+}
+
+span.retweet_count {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 80px;
+  background-color: #FF2873;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  color: #FFFFFF;
+
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+span.retweet_count strong {
+  font-size: 140%;
+}
+
+div.details {
+  text-align: left;
+  padding-top: 10px;
+
+  overflow: hidden;
+  _zoom: 1;
+}
+
+div.tweet_user {
+  float: right;
+  margin-left: 80px;
+}
+
+div.tweet_user a.profile_image {
+  display: block;
+  float: left;
+}
+
+div.tweet_user a.profile_image img {
+  width: 48px;
+  height: 48px;
+}
+
+div.tweet_user div.user_name_block {
+  margin-left: 55px;
+  padding: 5px 0;
+}
+
+div.tweet_user div.user_name_block a {
+}
+
+div.tweet_user div.user_name_block span {
+  display:block;
+  margin-top: 5px;
+  color: #999;
+}
+
+div.tweet_detail {
+  float: left;
+  height: 48px;
+  padding-left: 80px;
+  vertical-align: bottom;
+}
+
+div.tweet_detail span.timestamp {
+  color: #999;
+}
+
+h2 {
+  font-size: 150%;
+  padding: 8px 10px;
+}
+
+h2 span {
+  font-size: 85% !important;
+}
+
+div#nav {
+}
+
+footer {
+  background-color: #7BB02A;
+  color: #FFFFFF;
+}
+
+footer #footer_wrapper {
+  width: 865px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  _zoom: 1;
+}
+
+footer #footer_wrapper div.box {
+  float: left;
+  width: 275px;
+  height: 150px;
+  padding-right: 10px;
+}
+
+footer #footer_wrapper div.box h3 {
+  font-size: 113%;
+  margin-bottom: 5px;
+}
+
+footer #footer_wrapper div.box ul li{
+  line-height: 1.5;
+}
+
+footer #copyright {
+  clear: both;
+  text-align: center;
+  padding: 10px 0;
+}
+

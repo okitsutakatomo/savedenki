@@ -1,0 +1,32 @@
+<br />
+<% form_tag({:controller => "users", :action => "search"}, {:method => "get", :id => "search_form"}) do %>
+  <%= text_field_tag 'q',params[:q], {:placeholder => "名前からユーザを探す"} %>
+  <%= submit_tag "ユーザ検索" %>
+<% end %>
+<h2 style="color: #016998;">■<%= h @title %></h2>
+<div>
+  <% for user in @users %>
+    <img width="15" height="15" src="<%= user.profile_image_url %>"/>
+    <%= link_to user.screen_name, root_path(:params => {:screen_name => user.screen_name}) %><br />
+  <% end %>
+</div>
+<p style="text-align: center;">
+
+<%- if !@friends.blank? %>
+  <!% フォロー一覧 %>
+  <%- if @friends.previous_cursor != 0 -%>
+    &#xE6E5;<%= link_to "前へ", { :page => @friends.previous_cursor }, {:accesskey => 4} %>
+  <%- end -%>
+  <%- if @friends.next_cursor != 0 -%>
+    &#xE6E7;<%= link_to "次へ", { :page => @friends.next_cursor }, {:accesskey => 6} %>
+  <%- end -%>
+<% else %>
+  <!% 検索一覧 %>
+  <% if !params[:page].blank? && params[:page].to_i > 1 %>
+    &#xE6E5;<%= link_to "前へ", { :page => params[:page].to_i - 1, :q=> params[:q] }, {:accesskey => 4} %>
+  <% end %>
+  <% if @users.size >= 20 %>
+    &#xE6E7;<%= link_to "次へ", { :page => params[:page].to_i + 1, :q=> params[:q] }, {:accesskey => 6} %>
+  <% end %>
+<%- end -%>
+</p>

@@ -1,0 +1,27 @@
+<% form_tag({:controller => "users", :action => "search"}, {:method => "get", :id => "search_form"}) do %>
+  <%= text_field_tag 'q',params[:q], {:placeholder => t("commons.users.q_placeholder")} %>
+<% end %>
+<h2><%= h @title %></h2>
+<section id="following_section">
+<ul id="following_list">
+  <%= render :partial => "/commons/user" %>
+</ul>
+
+<div id="more">
+  <%= render :partial => "/commons/more" %>
+</div>
+</section>
+
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+
+    $("#more a").live("click", function(){
+      $(this).html('<img src="/images/ajax_loader.gif" /> <%= t("commons.users.more_text")%>');
+    })
+    
+})
+//]]>
+</script>
+
+

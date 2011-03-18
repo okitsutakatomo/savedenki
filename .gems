@@ -1,0 +1,4 @@
+twitter --version '0.9.1'
+will_paginate --version '>=2.3.15' --source http://gems.github.com
+chronic --verson '>=0.3.0'
+packet --version '>=0.1.15'
