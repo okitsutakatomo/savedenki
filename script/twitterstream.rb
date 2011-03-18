@@ -10,7 +10,7 @@ end
 case ARGV[0]
 when "start"
   fork do
-      system "ruby script/runner -e #{@env} 'TwitterStreamUtil::StreamApiWorker.execute'"
+      system "ruby #{RAILS_ROOT}/script/runner -e #{@env} 'TwitterStreamUtil::StreamApiWorker.execute'"
   end
 when "stop"
   command = "ps aux | grep ruby"
