@@ -4,7 +4,7 @@ WAIT_SECONDS = 30
 
 USERNAME = "save_denki"
 PASSWORD = "save_denki123"
-KEYWORD = ["#save_denki", "#jishin"]
+KEYWORD = ["#save_denki"]
 
 module TwitterStreamUtil
   class StreamApiWorker
