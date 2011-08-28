@@ -29,8 +29,8 @@ production:
   adapter: mysql
   database: savedenki_production
   host: localhost
-  username: okitsu
-  password: chinko7
+  username: root
+  password: 
   encoding: utf8
   pool: 5
   timeout: 5000  
@@ -39,8 +39,8 @@ staging:
   adapter: mysql
   database: savedenki_staging
   host: localhost
-  username: okitsu
-  password: chinko7
+  username: root
+  password: 
   encoding: utf8
   pool: 5
   timeout: 5000  
